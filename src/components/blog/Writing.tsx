@@ -95,15 +95,15 @@ export default function Writing({ posts }: WritingProps) {
         </div>
       </div>
 
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-2 md:gap-3">
         <button
           type="button"
           aria-label="Scroll writings left"
           onClick={() => scrollByCard('left')}
           disabled={!canScrollLeft}
-          className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-accent shadow-soft transition disabled:cursor-default disabled:opacity-30"
+          className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/85 text-accent shadow-[0_0_14px_rgba(108,99,255,0.18)] transition hover:bg-white hover:shadow-[0_0_20px_rgba(108,99,255,0.28)] disabled:cursor-default disabled:opacity-30 md:h-9 md:w-9"
         >
-          <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="h-4 w-4 md:h-5 md:w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
@@ -116,14 +116,14 @@ export default function Writing({ posts }: WritingProps) {
             <Link
               key={post.slug}
               href={`/blog/writings/${post.slug}`}
-              className="group relative aspect-square w-[72vw] max-w-[280px] shrink-0 snap-start overflow-hidden rounded-2xl bg-white shadow-soft transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-lg sm:w-[42vw] md:w-[320px] md:max-w-none lg:w-[340px]"
+              className="group relative aspect-square w-[calc((100%-1rem)/2)] shrink-0 snap-start overflow-hidden rounded-2xl bg-white shadow-soft transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-lg md:w-[calc((100%-4.5rem)/4)]"
             >
               <div className="absolute inset-0">
                 <Image
                   src={post.image}
                   alt={post.title}
                   fill
-                  sizes="(max-width: 640px) 72vw, (max-width: 768px) 42vw, 260px"
+                  sizes="(max-width: 768px) 50vw, 25vw"
                   className="object-cover"
                 />
               </div>
@@ -146,17 +146,17 @@ export default function Writing({ posts }: WritingProps) {
           aria-label="Scroll writings right"
           onClick={() => scrollByCard('right')}
           disabled={!canScrollRight}
-          className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-accent shadow-soft transition disabled:cursor-default disabled:opacity-30"
+          className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/85 text-accent shadow-[0_0_14px_rgba(108,99,255,0.18)] transition hover:bg-white hover:shadow-[0_0_20px_rgba(108,99,255,0.28)] disabled:cursor-default disabled:opacity-30 md:h-9 md:w-9"
         >
-          <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="h-4 w-4 md:h-5 md:w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>
       </div>
 
-      <div className="mt-4 h-1.5 overflow-hidden rounded-full bg-white/70">
+      <div className="mt-4 h-0.5 overflow-hidden rounded-full bg-white/60 shadow-[0_0_10px_rgba(108,99,255,0.14)]">
         <div
-          className="h-full rounded-full bg-accent transition-all duration-300"
+          className="h-full rounded-full bg-accent shadow-[0_0_12px_rgba(108,99,255,0.72)] transition-all duration-300"
           style={{ width: `${Math.max(scrollProgress * 100, canScrollRight ? 18 : 100)}%` }}
         />
       </div>
