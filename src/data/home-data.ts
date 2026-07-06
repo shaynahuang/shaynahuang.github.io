@@ -99,7 +99,7 @@ export const PROJECTS_MOCK = [
     title: 'UNDERGROUND ADVISOR - Digital Design',
     summary: 'This project expresses the reflection on the current digital technology leading human beings towards convergence through an interactive exhibition',
     image: '/images/PD_3_cover.png',
-    link: '/images/PD_3_cover.png',
+    link: '/pdfs/EUNDERGROUND ADVISOR.pdf',
     technologies: ['TouchDesigner', 'Python'],
     year: '2023'
   },
