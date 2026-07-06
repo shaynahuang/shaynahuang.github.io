@@ -33,6 +33,8 @@ export default function WritingDetail({ post }: WritingDetailProps) {
   const [language, setLanguage] = useState<'en' | 'zh'>('en')
   const title = language === 'en' ? post.title : post.titleZh
   const paragraphs = language === 'en' ? post.content : post.contentZh
+  const isSectionHeading = (paragraph: string) =>
+    /^\d+\.\s/.test(paragraph) || paragraph === 'Summary' || paragraph === '总结'
 
   return (
     <Layout>
@@ -84,10 +86,23 @@ export default function WritingDetail({ post }: WritingDetailProps) {
           />
         </div>
 
-        <div className="space-y-5 text-lg leading-relaxed text-gray-900">
-          {paragraphs.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
+        <div className={`space-y-5 text-lg leading-relaxed text-gray-900 ${language === 'zh' ? 'font-zh' : ''}`}>
+          {paragraphs.map((paragraph, index) => {
+            const heading = isSectionHeading(paragraph)
+
+            return (
+              <p
+                key={index}
+                className={
+                  heading
+                    ? 'mt-9 mb-2 text-xl font-semibold leading-snug text-accent'
+                    : undefined
+                }
+              >
+                {paragraph}
+              </p>
+            )
+          })}
         </div>
       </article>
     </Layout>
