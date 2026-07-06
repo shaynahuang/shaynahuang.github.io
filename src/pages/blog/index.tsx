@@ -2,7 +2,7 @@ import Layout from '../../components/common/Layout'
 import Image from 'next/image'
 import Writing from '../../components/blog/Writing'
 import Album from '../../components/blog/Album'
-import { BLOG_POSTS_MOCK } from '../../data/blog-posts'
+import { WRITINGS } from '../../data/writings'
 
 export default function Blog() {
   return (
@@ -12,7 +12,7 @@ export default function Blog() {
           <Image src="/images/blog.png" alt="Blog Logo" width={60} height={60} />
           Blog
         </h1>
-        <Writing posts={BLOG_POSTS_MOCK} />
+        <Writing posts={WRITINGS} />
         <Album />
       </div>
     </Layout>
