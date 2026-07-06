@@ -17,13 +17,13 @@ export const WRITINGS: WritingPost[] = [
   {
     title: 'Hubs Avatar Animation: How It Works and How to Extend It',
     date: '2026-07-06',
-    slug: 'Hubs Avatar Animation: How It Works and How to Extend It',
+    slug: 'Hubs Avatar Animation',
     excerpt: 'Learn how to set up a modern web application using Next.js and TypeScript. This comprehensive guide covers everything from project initialization to deployment.',
     category: 'Web Development',
     readTime: '7 min read',
     image: '/images/Writings/Hubs avatar',
     titleZh: 'Hubs 头像动画机制：它如何工作，以及如何扩展',
-    {
+    
   content: [
     'In Mozilla Hubs / Hubs Foundation codebases, avatar animation is not driven by a single centralized "avatar animation state machine." Instead, it is built from several smaller systems: glTF animation playback, IK, networked hand poses, and audio-driven feedback.',
     '1. Imported glTF Animations',
@@ -112,5 +112,5 @@ export const WRITINGS: WritingPost[] = [
     '更好的做法是同步语义状态，由各客户端本地执行动画播放与过渡。'
   ]
 }
-  }
+
 ]
