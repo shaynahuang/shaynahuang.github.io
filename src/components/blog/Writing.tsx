@@ -130,7 +130,7 @@ export default function Writing({ posts }: WritingProps) {
                 <div className="line-clamp-2 text-[12px] font-normal leading-snug text-black md:text-sm">
                   {post.title}
                 </div>
-                <div className="mt-1 text-[11px] leading-tight text-gray-500">
+                <div className="mt-3 text-[11px] leading-tight text-gray-500 md:mt-4">
                   {post.date} · {post.readTime}
                 </div>
               </div>
