@@ -16,16 +16,15 @@ export interface WritingPost {
 export const WRITINGS: WritingPost[] = [
   {
     title: 'Hubs Avatar Animation: How It Works and How to Extend It',
-    date: '2024-01-15',
+    date: '2026-07-06',
     slug: 'Hubs Avatar Animation: How It Works and How to Extend It',
     excerpt: 'Learn how to set up a modern web application using Next.js and TypeScript. This comprehensive guide covers everything from project initialization to deployment.',
     category: 'Web Development',
-    readTime: '5 min read',
-    image: '/images/ai1.jpg',
-    titleZh: 'Next.js 与 TypeScript 入门',
+    readTime: '7 min read',
+    image: '/images/Writings/Hubs avatar',
+    titleZh: 'Hubs 头像动画机制：它如何工作，以及如何扩展',
     {
   content: [
-    'Hubs Avatar Animation: How It Works and How to Extend It',
     'In Mozilla Hubs / Hubs Foundation codebases, avatar animation is not driven by a single centralized "avatar animation state machine." Instead, it is built from several smaller systems: glTF animation playback, IK, networked hand poses, and audio-driven feedback.',
     '1. Imported glTF Animations',
     'When a GLB or glTF model contains animation clips, Hubs creates a THREE.AnimationMixer for that model. The mixer is created by the gltf-model-plus component after the model has loaded.',
@@ -70,7 +69,6 @@ export const WRITINGS: WritingPost[] = [
   ],
 
   contentZh: [
-    'Hubs 头像动画机制：它如何工作，以及如何扩展',
     '在 Mozilla Hubs / Hubs Foundation 的代码中，avatar 动画并不是由一个统一的“动画状态机”驱动的，而是由多个小系统组合而成：glTF 动画播放、IK、网络手势状态以及音频驱动反馈。',
     '1. 导入的 glTF 动画',
     '当 GLB 或 glTF 模型包含动画片段时，Hubs 会为该模型创建 THREE.AnimationMixer。该 mixer 在模型加载完成后由 gltf-model-plus 组件创建。',
