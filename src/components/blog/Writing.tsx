@@ -10,7 +10,6 @@ interface WritingProps {
 export default function Writing({ posts }: WritingProps) {
   const scrollerRef = useRef<HTMLDivElement>(null)
   const [activeCategory, setActiveCategory] = useState('All')
-  const [scrollProgress, setScrollProgress] = useState(0)
   const [canScrollLeft, setCanScrollLeft] = useState(false)
   const [canScrollRight, setCanScrollRight] = useState(false)
 
@@ -32,8 +31,6 @@ export default function Writing({ posts }: WritingProps) {
     if (!el) return
 
     const maxScroll = el.scrollWidth - el.clientWidth
-    const nextProgress = maxScroll > 0 ? el.scrollLeft / maxScroll : 1
-    setScrollProgress(nextProgress)
     setCanScrollLeft(el.scrollLeft > 1)
     setCanScrollRight(el.scrollLeft < maxScroll - 1)
   }
@@ -95,28 +92,28 @@ export default function Writing({ posts }: WritingProps) {
         </div>
       </div>
 
-      <div className="flex items-center gap-2 md:gap-3">
+      <div className="relative">
         <button
           type="button"
           aria-label="Scroll writings left"
           onClick={() => scrollByCard('left')}
           disabled={!canScrollLeft}
-          className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/85 text-accent shadow-[0_0_14px_rgba(108,99,255,0.18)] transition hover:bg-white hover:shadow-[0_0_20px_rgba(108,99,255,0.28)] disabled:cursor-default disabled:opacity-30 md:h-9 md:w-9"
+          className="absolute left-0 top-1/2 z-10 inline-flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white text-accent shadow-soft transition hover:bg-accent/5 disabled:cursor-default disabled:opacity-30 md:-left-12 md:translate-x-0"
         >
-          <svg className="h-4 w-4 md:h-5 md:w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
 
         <div
           ref={scrollerRef}
-          className="flex flex-1 snap-x gap-4 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] md:gap-6 [&::-webkit-scrollbar]:hidden"
+          className="flex snap-x gap-4 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] md:gap-6 [&::-webkit-scrollbar]:hidden"
         >
           {filteredPosts.map((post) => (
             <Link
               key={post.slug}
               href={`/blog/writings/${post.slug}`}
-              className="group relative aspect-square w-[calc((100%-1rem)/2)] shrink-0 snap-start overflow-hidden rounded-2xl bg-white shadow-soft transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-lg md:w-[calc((100%-4.5rem)/4)]"
+              className="group relative aspect-[4/5] w-[calc((100%-1rem)/2)] shrink-0 snap-start overflow-hidden rounded-2xl bg-white shadow-soft transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-lg md:w-[calc((100%-4.5rem)/4)]"
             >
               <div className="absolute inset-0">
                 <Image
@@ -146,19 +143,12 @@ export default function Writing({ posts }: WritingProps) {
           aria-label="Scroll writings right"
           onClick={() => scrollByCard('right')}
           disabled={!canScrollRight}
-          className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/85 text-accent shadow-[0_0_14px_rgba(108,99,255,0.18)] transition hover:bg-white hover:shadow-[0_0_20px_rgba(108,99,255,0.28)] disabled:cursor-default disabled:opacity-30 md:h-9 md:w-9"
+          className="absolute right-0 top-1/2 z-10 inline-flex h-9 w-9 translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white text-accent shadow-soft transition hover:bg-accent/5 disabled:cursor-default disabled:opacity-30 md:-right-12 md:translate-x-0"
         >
-          <svg className="h-4 w-4 md:h-5 md:w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>
-      </div>
-
-      <div className="mt-4 h-0.5 overflow-hidden rounded-full bg-white/60 shadow-[0_0_10px_rgba(108,99,255,0.14)]">
-        <div
-          className="h-full rounded-full bg-accent shadow-[0_0_12px_rgba(108,99,255,0.72)] transition-all duration-300"
-          style={{ width: `${Math.max(scrollProgress * 100, canScrollRight ? 18 : 100)}%` }}
-        />
       </div>
     </section>
   )
