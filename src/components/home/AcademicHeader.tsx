@@ -7,13 +7,24 @@ export default function AcademicHeader() {
     <header className="md:flex md:items-center md:gap-8">
       {/* 左栏：头像 + Get in touch icons */}
       <div className="md:w-1/3 flex flex-col items-center md:items-start mb-6 md:mb-0">
-        <Image
-          src="/images/hxh.png"
-          alt="Profile Photo"
-          width={160}
-          height={160}
-          className="rounded-full shadow-[0_12px_32px_rgba(108,99,255,0.30)]"
-        />
+        <div className="group h-40 w-40 [perspective:1000px]" aria-label="Profile photo">
+          <div className="relative h-full w-full rounded-full shadow-[0_12px_32px_rgba(108,99,255,0.30)] transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+            <Image
+              src="/images/hxh.png"
+              alt="Profile Photo"
+              fill
+              sizes="160px"
+              className="rounded-full object-cover [backface-visibility:hidden]"
+            />
+            <Image
+              src="/images/10ccac99afb21257c0feb94084736b2e.jpg"
+              alt="Profile Photo Hover"
+              fill
+              sizes="160px"
+              className="rounded-full object-cover [backface-visibility:hidden] [transform:rotateY(180deg)]"
+            />
+          </div>
+        </div>
         <div className="mt-6 flex gap-6">
           <a href={SOCIAL_LINKS.email} className="text-gray-600 hover:text-accent transition-colors" title="Email">
             <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
