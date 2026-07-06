@@ -17,7 +17,7 @@ export const WRITINGS: WritingPost[] = [
   {
     title: 'Hubs Avatar Animation: How It Works and How to Extend It',
     date: '2026-07-06',
-    slug: 'Hubs Avatar Animation',
+    slug: 'Hubs_Avatar_Animation',
     excerpt: 'Learn how to set up a modern web application using Next.js and TypeScript. This comprehensive guide covers everything from project initialization to deployment.',
     category: 'Web Development',
     readTime: '7 min read',
