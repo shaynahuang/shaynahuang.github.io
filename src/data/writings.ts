@@ -21,7 +21,7 @@ export const WRITINGS: WritingPost[] = [
     excerpt: 'Learn how to set up a modern web application using Next.js and TypeScript. This comprehensive guide covers everything from project initialization to deployment.',
     category: 'Web Development',
     readTime: '7 min read',
-    image: '/images/Writings/Hubs avatar',
+    image: '/images/Writings/Hubs avatar.png',
     titleZh: 'Hubs 头像动画机制：它如何工作，以及如何扩展',
     
   content: [
