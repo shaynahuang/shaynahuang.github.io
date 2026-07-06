@@ -52,7 +52,7 @@ export const PUBLICATION_MOCK: Publication[] = [
     category: 'conference',
     linkWebsite: 'https://nothumanfunnier.netlify.app/',
     linkarXiv: 'http://arxiv.org/abs/2602.12763',
-    linkPdf: 'pdfs/Not Human.pdf'
+    linkPdf: '/pdfs/Not Human.pdf'
   },
   {
     title: '"Ronaldo’s a poser!": How the Use of Generative AI Shapes Debates in Online Forums',
@@ -63,8 +63,7 @@ export const PUBLICATION_MOCK: Publication[] = [
     image: '/images/pub1.png',
     category: 'conference',
     linkProceedings: 'https://dl.acm.org/doi/full/10.1145/3706598.3713829',
-    linkarXiv: 'https://arxiv.org/abs/2502.09693',
-    linkPdf: 'pdfs/Ronaldo.pdf'
+    linkarXiv: 'https://arxiv.org/abs/2502.09693'
   },
   {
     title: 'Innovative Interpretation of Traditional Handicraft in Product Design—A Case Study of Qinhuai Lanterns',
@@ -74,8 +73,7 @@ export const PUBLICATION_MOCK: Publication[] = [
     description: '',
     image: '/images/pub2.png',
     category: 'journal',
-    linkDoi: 'https://doi.org/10.16771/j.cn43-1247/ts.2023.01.015',
-    linkPdf: '/pdfs/Trad.pdf'
+    linkDoi: 'https://doi.org/10.16771/j.cn43-1247/ts.2023.01.015'
   }
 ]
 
@@ -101,7 +99,7 @@ export const PROJECTS_MOCK = [
     title: 'UNDERGROUND ADVISOR - Digital Design',
     summary: 'This project expresses the reflection on the current digital technology leading human beings towards convergence through an interactive exhibition',
     image: '/images/PD_3_cover.png',
-    link: '/pdfs/UNDERGROUND ADVISOR.pdf',
+    link: '/images/PD_3_cover.png',
     technologies: ['TouchDesigner', 'Python'],
     year: '2023'
   },
@@ -109,7 +107,7 @@ export const PROJECTS_MOCK = [
     title: 'Energlobe - Product Design',
     summary: 'This project provides psychological comfort to children while helping parents to ensure their safety, trying to create a better life for people indisaster-prone areas',
     image: '/images/PD_2_cover.png',
-    link: '/pdfs/Energlobe.pdf',
+    link: '/pdfs/ENERGLOBE.pdf',
     technologies: ['Rhino', 'Keyshot'],
     year: '2023'
   },
@@ -117,7 +115,7 @@ export const PROJECTS_MOCK = [
     title: 'MyoRider - Concept Design',
     summary: 'The project aims to improve the self-care ability of people with serious disabilities,by using EMG to construct a system that enables them to achieve mobility control through small movements',
     image: '/images/PD_4_cover.png',
-    link: '/pdfs/MyoRider.pdf',
+    link: '/pdfs/MYORIDER.pdf',
     technologies: ['Rhino', 'Keyshot'],
     year: '2023'
   },
@@ -125,7 +123,7 @@ export const PROJECTS_MOCK = [
     title: 'Beyond Hands - Product Design',
     summary: 'Assistive photography product designed for disabled without hands.',
     image: '/images/GP_5_cover.png',
-    link: '/ppts/BH.pptx',
+    link: '/ppts/BH.pdf',
     technologies: ['Rhino', 'Keyshot'],
     year: '2025'
   }
