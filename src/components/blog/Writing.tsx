@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useMemo, useRef, useState } from 'react'
-import type { BlogPost } from '../../data/blog-posts'
+import type { WritingPost } from '../../data/writings'
 
 interface WritingProps {
-  posts: BlogPost[]
+  posts: WritingPost[]
 }
 
 export default function Writing({ posts }: WritingProps) {

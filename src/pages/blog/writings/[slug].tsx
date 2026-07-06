@@ -3,22 +3,22 @@ import Link from 'next/link'
 import type { GetStaticPaths, GetStaticProps } from 'next'
 import { useState } from 'react'
 import Layout from '../../../components/common/Layout'
-import { BLOG_POSTS_MOCK, type BlogPost } from '../../../data/blog-posts'
+import { WRITINGS, type WritingPost } from '../../../data/writings'
 
 type WritingDetailProps = {
-  post: BlogPost
+  post: WritingPost
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: BLOG_POSTS_MOCK.map((post) => ({ params: { slug: post.slug } })),
+    paths: WRITINGS.map((post) => ({ params: { slug: post.slug } })),
     fallback: false,
   }
 }
 
 export const getStaticProps: GetStaticProps<WritingDetailProps> = async ({ params }) => {
   const slug = params?.slug as string
-  const post = BLOG_POSTS_MOCK.find((item) => item.slug === slug)
+  const post = WRITINGS.find((item) => item.slug === slug)
 
   if (!post) {
     return { notFound: true }
