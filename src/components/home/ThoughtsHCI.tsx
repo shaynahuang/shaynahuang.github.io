@@ -6,14 +6,12 @@ export default function ThoughtsHCI() {
       <h2 className="text-2xl md:text-3xl font-semibold text-accent mb-6 display-script">Thoughts on HCI</h2>
       <div className="space-y-4 text-lg text-gray-900 leading-relaxed">
         <p>
-          Personally, I view the essential function of HCI as converting technology into productivity or possibility for humans. HCI serves a dual purpose:
+          I see HCI as a river that shapes how people live and produce. HCI researchers navigate its rocky terrain, exploring where the current might lead, how its course might expand, and how it can nourish the world around it.
         </p>
-        <ul className="list-disc pl-6 space-y-2">
-          <li>(a) Contributing to the tangible improvement of human lives, even marginally; or</li>
-          <li>(b) Sparking the potential to change how people utilize technology.</li>
-        </ul>
+        
+          My current research spans Extended Reality (XR), Human–AI Interaction, and the study of human needs and behavior. My ultimate research vision is to develop elegant approaches that enable people to live and work effortlessly with emerging technologies.
         <p>
-          As a junior researcher, I adopt this perspective as a <span className="text-black font-semibold">framework</span>, continually filling it with my work, learning, and exploration.
+          As a junior researcher, I am trying to observe and absorb as much as possible at the current stage. As an 'overthinker', I really enjoy exchanging thoughts with independent minds. If my work resonates with you, I would be delighted to connect and have a conversation.
         </p>
       </div>
       <div className="mt-8 flex justify-center gap-4">
