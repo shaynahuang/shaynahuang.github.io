@@ -6,10 +6,10 @@ export default function AboutMeAcademic() {
       <h2 className="text-2xl md:text-3xl font-semibold text-accent mb-6 display-script">About Me</h2>
       <div className="fade-in-up space-y-4 text-lg text-gray-900 leading-relaxed">
         <p>
-          🎓 I am Xuehan Huang (黄雪晗), a master's student graduated from the Department of Mechanical Engineering, <span className="text-black font-semibold">The University of Hong Kong</span>.
+           I am Xuehan Huang (黄雪晗), a master's student graduated from the Department of Mechanical Engineering, <span className="text-black font-semibold">The University of Hong Kong</span>.
         </p>
         <p>
-          📚 I received my B.Eng. from Nanjing University of Science and Technology. Subsequently, I collaborated with {' '}
+           I received my B.Eng. from Nanjing University of Science and Technology. Subsequently, I collaborated with {' '}
           <a href="https://raylc.org/" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold underline">Dr. RAY LC</a>
           {' '}and{' '}
           <a href="https://scholar.google.com/citations?hl=en&user=TuqWAMQAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold underline">Prof. Fiona Nah</a>
