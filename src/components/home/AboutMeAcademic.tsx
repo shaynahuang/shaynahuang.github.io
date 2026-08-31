@@ -13,14 +13,14 @@ export default function AboutMeAcademic() {
           <a href="https://raylc.org/" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold underline">Dr. RAY LC</a>
           {' '}and{' '}
           <a href="https://scholar.google.com/citations?hl=en&user=TuqWAMQAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold underline">Prof. Fiona Nah</a>
-          {' '}on projects concerning <span className="text-black font-semibold">AI-mediated Communication</span>. Currently, I am a Research Assistant in Dept. of Comp at PolyU, working on <span className="text-black font-semibold">Web-based XR Applications</span> under the supervision of <a href="https://www.polyu.edu.hk/comp/people/academic-staff/prof-li-chen-richard/" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold underline">Prof. Richard Li</a>. Concurrently, I am also a part-time intern at the Immersive Design Group, where I focus on <span className="text-black font-semibold">MR interactive systems</span> supervised by{' '}
+          {' '}on projects concerning <span className="text-black font-semibold">AI-mediated Communication</span>. Currently, I am a Research Assistant in Dept. of Comp at PolyU, working on <span className="text-black font-semibold">Web-based XR Applications</span> under the supervision of <a href="https://www.polyu.edu.hk/comp/people/academic-staff/prof-li-chen-richard/" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold underline">Prof. Richard Li</a> and <a href="https://www.polyu.edu.hk/comp/people/academic-staff/prof-ng-hiu-fung-peter/" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold underline">Prof. Peter Ng</a>. Concurrently, I am also a part-time intern at the Immersive Design Group, where I focus on <span className="text-black font-semibold">MR interactive systems</span> supervised by{' '}
           <a href="https://immersivedesignresearch.com/seungwoo" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold underline">Prof. Seungwoo Je</a>.
         </p>
         <p>
           In daily lives, I am a badminton lover🏸, a photo enthusiast📷, a professional thinker and a non-professional writer✍️.
         </p>
         <p>
-        📢 I am currently seeking <span className="text-black font-semibold">PhD</span> opportunities in HCI-related fields. Please feel free to reach out if you are interested 😊.
+        📢 I am currently seeking <span className="text-black font-semibold">PhD</span> opportunities in HCI-related fields. Please feel free to reach out if you are interested.
         </p>
       </div>
     </section>
