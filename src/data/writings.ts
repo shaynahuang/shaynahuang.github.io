@@ -120,7 +120,7 @@ export const WRITINGS: WritingPost[] = [
   excerpt: 'After submitting my CHI27 manuscript, I found myself thinking about departing friends, the quiet fatigue of research, and a participant whose words reminded me why this work matters.',
   category: 'Research Reflections',
   readTime: '5 min read',
-  image: '',
+  image: '/images/Writings/7f93c52f7bfd4b983cb28255894f065f.png'
   titleZh: 'CHI27之夜',
 
   content: [
