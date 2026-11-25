@@ -2,9 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/public/fonts/Satoshi-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/public/fonts/Satoshi-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/public/fonts/Satoshi-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/public/fonts/Satoshi-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/public/fonts/Satoshi-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* CSS 变量用于可微调主题 */
 :root {
-  --bg: #EEF1FF; /* 主背景色：柔和浅雪青/淡紫 */
+  --bg: #EEF1FF; /* 主背景色：柔和雪青/淡紫 */
   --card: #FFFFFF; /* 卡片纯白 */
   --text: #111827; /* 基础文本深灰 */
   --accent: #6C63FF; /* 强调色 */
@@ -19,9 +59,9 @@ html, body, #__next {
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: 'Poppins', 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-  line-height: 1.75; /* 行高更宽松 */
-  font-weight: 400; /* 默认 regular */
+  font-family: 'Satoshi', 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.75;
+  font-weight: 400;
 }
 
 .font-zh {
@@ -34,11 +74,11 @@ body {
 
 /* 调整常见粗细：粗体->regular(400), 细体->extralight(200) */
 strong, b, h1, h2, h3, h4, h5, h6 {
-  font-weight: 250; /* regular 替代粗体 */
+  font-weight: 250;
 }
 
 .text-thin, .font-thin, .extralight {
-  font-weight: 200; /* extralight */
+  font-weight: 200;
 }
 
 /* 背景抽象雪花/光晕（极度稀疏、半透明） */
@@ -134,9 +174,9 @@ body, a, button {
 /* 通用卡片 */
 .card {
   background: var(--card);
-  border-radius: 20px; /* 大圆角 */
+  border-radius: 20px;
   box-shadow: 0 8px 24px rgba(108, 99, 255, 0.08), 0 2px 8px rgba(17, 24, 39, 0.06);
-  padding: 1.25rem; /* 全站卡片内容更宽松 */
+  padding: 1.25rem;
 }
 
 /* 细分割线/冰晶感几何线条 */
