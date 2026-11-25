@@ -121,7 +121,7 @@ export default function Writing({ posts }: WritingProps) {
   alt={post.title}
   fill
   sizes="(max-width: 768px) 50vw, 25vw"
-  className="object-contain"
+  className="object-cover"
 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-tr from-accent/10 to-transparent" />
