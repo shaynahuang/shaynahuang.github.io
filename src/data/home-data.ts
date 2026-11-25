@@ -45,7 +45,7 @@ export const PUBLICATION_MOCK: Publication[] = [
   {
     title: 'EchoYourMove: Exploring Audio Feedback in Virtual Avatar Co-embodiment',
     year: '2026',
-    authors: 'Huang, X.; Shi, H.; Jiang, W.; Je, S.',
+    authors: 'Xuehan Huang; Han Shi; Weitao Jiang; Seungwoo Je',
     journal: 'International Journal of Human-Computer Interaction (IJHCI) (Accepted)',
     description: '',
     image: '/images/pub6.png',
@@ -55,7 +55,7 @@ export const PUBLICATION_MOCK: Publication[] = [
   {
     title: '"Not Human, Funnier": How Machine Identity Shapes Humor Perception in Online AI Stand-up Comedy',
     year: '2026',
-    authors: 'Huang, X.*; Wang, C.*; Hao, Y.*; Yang, D.; LC, R.',
+    authors: 'Xuehan Huang*; Canwen Wang*; Yifei Hao*; Daijin Yang; RAY LC',
     journal: 'ACM CHI 2026',
     description: '',
     image: '/images/pub3.png',
@@ -67,7 +67,7 @@ export const PUBLICATION_MOCK: Publication[] = [
   {
     title: '"Ronaldo’s a poser!": How the Use of Generative AI Shapes Debates in Online Forums',
     year: '2025',
-    authors: 'Zeng, Y.*; Shi, Y.*; Huang, X.*; Nah, F.; LC, R.',
+    authors: 'Yuhan Zeng*; Yingxuan Shi*; Xuehan Huang*; Fiona Fui-Hoon Nah; RAY LC',
     journal: 'ACM CHI 2025',
     description: '',
     image: '/images/pub1.png',
@@ -78,7 +78,7 @@ export const PUBLICATION_MOCK: Publication[] = [
   {
     title: 'Innovative Interpretation of Traditional Handicraft in Product Design—A Case Study of Qinhuai Lanterns',
     year: '2023',
-    authors: 'Zhang, N.; Lei, A.; Wang, L.; Huang, X.',
+    authors: 'Nan Zhang.; Amei Lei; Linting Wang; Xuehan Huang',
     journal: 'Furniture & Interior Design, 2023',
     description: '',
     image: '/images/pub2.png',
