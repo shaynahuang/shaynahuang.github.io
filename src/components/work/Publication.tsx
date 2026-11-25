@@ -21,7 +21,7 @@ interface PublicationProps {
   publications: Publication[]
 }
 
-const HIGHLIGHT_NAME = 'Huang, X.'
+const HIGHLIGHT_NAME = 'Xuehan Huang'
 
 function renderAuthors(authors: string) {
   const parts = authors.split(HIGHLIGHT_NAME)
