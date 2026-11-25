@@ -117,12 +117,12 @@ export default function Writing({ posts }: WritingProps) {
             >
               <div className="absolute inset-0">
                 <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  sizes="(max-width: 768px) 50vw, 25vw"
-                  className="object-cover"
-                />
+  src={post.image}
+  alt={post.title}
+  fill
+  sizes="(max-width: 768px) 50vw, 25vw"
+  className="object-contain"
+/>
               </div>
               <div className="absolute inset-0 bg-gradient-to-tr from-accent/10 to-transparent" />
               <div className="absolute bottom-0 left-0 z-10 p-3 md:p-4">
