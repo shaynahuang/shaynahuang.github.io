@@ -50,11 +50,7 @@ export const PUBLICATION_MOCK: Publication[] = [
     description: '',
     image: '/images/pub6.png',
     category: 'journal',
-    {/*
-    linkWebsite: 'https://nothumanfunnier.netlify.app/',
-    linkarXiv: 'http://arxiv.org/abs/2602.12763',
-    linkPdf: '/pdfs/Not Human.pdf'
-    */}
+    
   },
   {
     title: '"Not Human, Funnier": How Machine Identity Shapes Humor Perception in Online AI Stand-up Comedy',
