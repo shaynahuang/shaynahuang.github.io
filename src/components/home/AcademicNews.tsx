@@ -4,7 +4,7 @@ const NEWS = [
   {
     date: "11/2026",
     content: (
-      <>🎉 My first-author paper (EchoYourMove) has been accepted to IJHCI! This marks my first publication in the XR field and my first in an international journal. Many thanks to my fantastic co-authors!</>
+      <>🎉 My first-author paper (EchoYourMove) has been accepted to IJHCI! This marks my first publication in the XR field and in an international journal. Many thanks to my fantastic co-authors!</>
     ),
     link: null,
   },
@@ -32,7 +32,7 @@ const NEWS = [
   {
     date: "01/2026",
     content: (
-      <>🎉 One of my first-author papers has been accepted to ACM CHI 2026! A huge thanks to my co-authors for their support!</>
+      <>🎉 One of my first-author papers has been accepted to ACM CHI 2026! See you in Barcelona ~</>
     ),
     link: null,
   },
