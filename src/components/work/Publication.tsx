@@ -59,7 +59,9 @@ export default function Publication({ publications }: PublicationProps) {
 
   return (
     <div className="space-y-6">
-      <h2 className="text-3xl font-bold text-accent mb-8">Publications</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold text-accent mb-8 display-script">
+  Publications
+</h2>
       {sections.map((category) => {
         const list = byCategory[category] ?? []
         if (list.length === 0) return null
