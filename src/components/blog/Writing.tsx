@@ -113,7 +113,7 @@ export default function Writing({ posts }: WritingProps) {
             <Link
               key={post.slug}
               href={`/blog/writings/${post.slug}`}
-              className="group relative aspect-[4/5] w-[calc((100%-1rem)/2)] shrink-0 snap-start overflow-hidden rounded-2xl bg-white shadow-soft transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-lg md:w-[calc((100%-4.5rem)/4)]"
+              className="group relative aspect-[4/5] w-[calc((100%-1rem)/2)] shrink-0 snap-start overflow-hidden bg-white shadow-soft transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-lg md:w-[calc((100%-4.5rem)/4)]"
             >
               <div className="absolute inset-0">
                 <Image
