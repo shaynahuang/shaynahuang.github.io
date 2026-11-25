@@ -82,6 +82,18 @@ export default function Publication({ publications }: PublicationProps) {
                       )}
                     </div>
                     <div className="flex-1 min-w-0">
+                      <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-2 md:mb-3 break-words">
+  {pub.title}
+</h3>
+
+<div className="text-sm text-gray-700 leading-snug mb-1">
+  {pub.journal}
+</div>
+
+<div className="text-sm text-gray-500 leading-snug">
+  {renderAuthors(pub.authors)}
+</div>
+                      {/*
                       <h3 className="text-lg md:text-xl font-semibold text-gray-800 mb-1 break-words">
                         {pub.title}
                       </h3>
@@ -89,6 +101,7 @@ export default function Publication({ publications }: PublicationProps) {
                       <div className="text-sm text-gray-500 leading-snug">
                         {renderAuthors(pub.authors)}
                       </div>
+                      */}
                       <div className="flex flex-wrap gap-2 mt-2">
                         {pub.linkProceedings && (
                           <a
