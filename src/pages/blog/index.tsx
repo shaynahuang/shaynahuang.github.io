@@ -8,10 +8,12 @@ export default function Blog() {
   return (
     <Layout>
       <div className="max-w-6xl mx-auto px-4 py-12">
+        {/*
         <h1 className="flex items-center justify-center gap-3 text-4xl md:text-5xl font-bold text-center text-accent mb-12 display-script">
           <Image src="/images/blog.png" alt="Blog Logo" width={60} height={60} />
           Blog
         </h1>
+        */}
         <Writing posts={WRITINGS} />
         <Album />
       </div>
