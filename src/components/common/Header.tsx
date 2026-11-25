@@ -1,8 +1,11 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { NAV_LINKS } from '../../data/site-config'
 
 export default function Header() {
+  const router = useRouter()
+  const isHomepage = router.pathname === '/'
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
 
@@ -18,19 +21,20 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-          <Link href="/" className="group inline-flex items-center">
-  <span className="inline-block p-2 rounded-full bg-white shadow-soft transition-transform duration-500 group-hover:rotate-12">
-    {/* ✨ 替换后的 Snowman.svg Logo */}
-    <img
-      src="/images/Snowman.svg" 
-      alt="Snowman Logo" 
-      width="28" 
-      height="28"
-      className="text-accent" /* 注意：此处的 className 对 SVG 文件的内部颜色可能无效 */
-    />
-  </span>
-  <span className="ml-3 text-lg font-semibold text-accent display-script">Welcome</span>
-</Link>
+            <Link href="/" className="group inline-flex items-center">
+              <span className="inline-block p-2 rounded-full bg-white shadow-soft transition-transform duration-500 group-hover:rotate-12">
+                <img
+                  src="/images/Snowman.svg"
+                  alt="Snowman Logo"
+                  width="28"
+                  height="28"
+                  className="text-accent"
+                />
+              </span>
+              {isHomepage && (
+                <span className="ml-3 text-lg font-semibold text-accent display-script">Welcome</span>
+              )}
+            </Link>
           </div>
           {/* 桌面导航 */}
           <div className="hidden md:flex items-center space-x-8">
@@ -40,7 +44,7 @@ export default function Header() {
                 href={link.href}
                 className="relative text-gray-700 hover:text-accent px-3 py-2 text-base display-script transition-colors"
               >
-                <span className="after:absolute after:left-3 after:right-3 after:-bottom-0.5 after:h-[2px] after:bg-accent after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform"/>
+                <span className="after:absolute after:left-3 after:right-3 after:-bottom-0.5 after:h-[2px] after:bg-accent after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300" />
                 {link.name}
               </Link>
             ))}
