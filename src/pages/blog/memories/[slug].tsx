@@ -130,9 +130,9 @@ export default function MemoryDetail({ data }: MemoryDetailProps) {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {data.images.map((src, idx) => (
-            <div key={idx} className="overflow-hidden bg-white shadow-soft aspect-square">
-              <img src={src} alt={`memory-${idx}`} className="w-full h-full object-cover" />
-            </div>
+            <div key={idx} className="overflow-hidden bg-white shadow-soft aspect-square rounded-none">
+  <img src={src} alt={`memory-${idx}`} className="w-full h-full object-cover rounded-none" />
+</div>
           ))}
         </div>
       </div>
