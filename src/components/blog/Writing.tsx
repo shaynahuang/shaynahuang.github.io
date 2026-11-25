@@ -126,7 +126,7 @@ export default function Writing({ posts }: WritingProps) {
               </div>
               <div className="absolute inset-0 bg-gradient-to-tr from-accent/10 to-transparent" />
               <div className="absolute bottom-0 left-0 z-10 p-3 md:p-4">
-  <span className="inline bg-white px-1.5 py-1 text-[12px] md:text-sm font-normal leading-relaxed text-black box-decoration-clone">
+  <span className="inline bg-white px-1.5 py-1 text-[14px] md:text-sm font-normal leading-relaxed text-black box-decoration-clone">
     {post.title}
   </span>
 </div>
