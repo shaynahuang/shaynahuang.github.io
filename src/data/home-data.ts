@@ -43,6 +43,20 @@ export const INTERESTS = [
 // 出版物数据
 export const PUBLICATION_MOCK: Publication[] = [
   {
+    title: 'EchoYourMove: Exploring Audio Feedback in Virtual Avatar Co-embodiment',
+    year: '2026',
+    authors: 'Huang, X.; Shi, H.; Jiang, W.; Je, S.',
+    journal: 'International Journal of Human-Computer Interaction (IJHCI) (Accepted)',
+    description: '',
+    image: '/images/pub6.png',
+    category: 'journal',
+    {/*
+    linkWebsite: 'https://nothumanfunnier.netlify.app/',
+    linkarXiv: 'http://arxiv.org/abs/2602.12763',
+    linkPdf: '/pdfs/Not Human.pdf'
+    */}
+  },
+  {
     title: '"Not Human, Funnier": How Machine Identity Shapes Humor Perception in Online AI Stand-up Comedy',
     year: '2026',
     authors: 'Huang, X.*; Wang, C.*; Hao, Y.*; Yang, D.; LC, R.',
