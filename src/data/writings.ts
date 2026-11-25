@@ -21,7 +21,7 @@ export const WRITINGS: WritingPost[] = [
   excerpt: 'Do HCI researchers all wait for their own Apple moment? Caught between idealism and the practical demands of a PhD application, I find myself looking at the sea, wondering whether to follow a dream or simply find a place to begin.',
   category: 'Research Reflections',
   readTime: '4 min read',
-  image: '/images/Writings/Hubs avatar.png',
+  image: '/images/Writings/69c58618a823f25df7dc50ea262103ff.png',
   titleZh: 'HCI人的梦想是否是乔布斯',
 
   content: [
