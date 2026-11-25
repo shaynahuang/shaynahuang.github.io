@@ -15,6 +15,53 @@ export interface WritingPost {
 // Each slug becomes a page at /blog/writings/[slug].
 export const WRITINGS: WritingPost[] = [
   {
+  title: 'Is Every HCI Researcher Dreaming of Being Steve Jobs?',
+  date: '2026-11-09',
+  slug: 'Is_Every_HCI_Researcher_Dreaming_of_Being_Steve_Jobs',
+  excerpt: 'Do HCI researchers all wait for their own Apple moment? Caught between idealism and the practical demands of a PhD application, I find myself looking at the sea, wondering whether to follow a dream or simply find a place to begin.',
+  category: 'Research Reflections',
+  readTime: '4 min read',
+  image: '/images/Writings/Hubs avatar.png',
+  titleZh: 'HCI人的梦想是否是乔布斯',
+
+  content: [
+    'Does every HCI researcher secretly hope for an Apple moment of their own?',
+
+    'I was talking with my current supervisor about the limitations of XR. He said that, at present, the most common approach, and arguably the one that feels most intuitive to users, is to map 2D interactions into 3D environments. After all, it requires almost no learning. That is why doing something counterintuitive can be particularly challenging.',
+
+    'I told him that I still believe XR can be more than this. We are all waiting for a Steve Jobs, for an Apple moment to arrive. Before touchscreens, we thought the keyboard layout was the be-all and end-all. Before graphical user interfaces, we thought clicking was all there was. Even if I am not the next Steve Jobs, I would still like to be one of the stepping stones along the way.',
+
+    'Yet when I bring the question back to my own life, the adventure suddenly feels a little daunting.',
+
+    'I am at a critical point in my PhD applications. What matters more: pursuing a dream, or publishing papers and securing an offer first? Is it more important to go somewhere I truly want to be, or simply to have somewhere to go? In the current academic climate, idealists can seem a little too naive, even privileged. I know which topics are popular and what kind of formulaic papers are more likely to get accepted. Yet something deep inside me quietly resists the idea of doing research simply for the sake of publishing.',
+
+    'But watching the people around me rise and fall, change course and struggle with their own uncertainties, I find myself questioning my choices more and more. So I have been going to the sea more often, as if the dark, ink-colored waves might somehow tell me what to do.',
+
+    'Time, however, waits for no one. The weekend passed just like that, beneath a patch of gentle, hazy sunlight. On Monday morning, I woke up and found myself asking again: What would you do today? What will you do to contribute to this world?',
+
+    'What once brought us joy, in the blink of an eye, has already become a thing of the past.'
+  ],
+
+  contentZh: [
+    '是否每个HCI人都曾期待过一个属于自己的Apple Moment？',
+
+    '和现在的老板聊到XR的局限性。老板说，目前最常见、也最符合用户直觉的方式，就是将2D交互映射到3D环境中，因为这样几乎没有学习成本。所以，尝试一些反直觉的东西，会是一件比较有挑战性的事。',
+
+    '我说，我始终相信XR不止于此。我们都在期待一个乔布斯，期待一个Apple Moment的到来。在触屏出现之前，我们也曾觉得键盘的layout就是一切。在图形界面出现之前，我们也曾觉得点击就是一切。哪怕我不是下一个乔布斯，我也期待自己能成为那块垫脚石。',
+
+    '但是，当问题回到具体的自己身上时，这场小小的冒险，似乎又让人有些胆怯。',
+
+    '正处在PhD申请的关键时期，究竟是梦想重要，还是先发paper、拿到offer重要？究竟是去想去的地方重要，还是先有一个去处重要？在当下的学术环境里，理想主义者好像显得有些过于天真，甚至有些privileged。我知道什么topic更受欢迎，也知道怎样的八股文中稿概率更高。但内心深处，又隐隐排斥为了发paper而做研究的状态。',
+
+    '可是，看着身边的朋友们浮浮沉沉，我愈发怀疑自己的选择。于是，看海的次数越来越多，仿佛那些墨色的波浪能够告诉我答案。',
+
+    '然而，时光从不会等待谁。周末就这样在一片温良而模糊的阳光里过去了。周一醒来，又忍不住问自己：What would you do today? What will you do to contribute to this world?',
+
+    '向之所欣，俯仰之间，已为陈迹。'
+  ]
+},
+  
+  {
   title: 'The Night of CHI27',
   date: '2026-09-11',
   slug: 'The_Night_of_CHI27',
