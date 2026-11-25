@@ -41,7 +41,7 @@ export default function AcademicHeader() {
       <div className="md:w-2/3 text-center md:text-left">
         <h1 className="text-4xl md:text-5xl font-bold text-accent display-script mb-6">Xuehan (Shayna) Huang</h1>
         {/*<div className="text-lg text-black font-regular">RA @ PolyU COMP </div>*/}
-        <div className="text-lg text-black font-regular">A Designer and a Practitioner.</div>
+        {/*<div className="text-lg text-black font-regular">A Designer and a Practitioner.</div>*/}
       </div>
     </header>
   )
