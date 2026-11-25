@@ -126,9 +126,9 @@ export default function Writing({ posts }: WritingProps) {
               </div>
               <div className="absolute inset-0 bg-gradient-to-tr from-accent/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-white/90 transition-transform duration-300 group-hover:translate-y-[-2px]" />
-              
-              <div className="absolute bottom-0 left-0 right-0 h-1/3 px-3 py-3 md:px-4">
-                {/*
+              <div className="absolute bottom-0 left-0 right-0 z-10 flex h-1/3 items-center px-3 md:px-4">
+              {/*
+                <div className="absolute bottom-0 left-0 right-0 h-1/3 px-3 py-3 md:px-4">
                 <div className="line-clamp-2 text-[12px] font-normal leading-snug text-black md:text-sm">
                   {post.title}
                 </div>
