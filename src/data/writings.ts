@@ -39,7 +39,7 @@ export const WRITINGS: WritingPost[] = [
 
     'Time, however, waits for no one. The weekend passed just like that, beneath a patch of gentle, hazy sunlight. On Monday morning, I woke up and found myself asking again: What would you do today? What will you do to contribute to this world?',
 
-    'What once brought us joy, in the blink of an eye, has already become a thing of the past.'
+    'What once brought us joy, in the blink of an eye, has already become a thing of the past.',
 
     '(Figure credit: Xuehan Huang)'
   ],
@@ -59,9 +59,9 @@ export const WRITINGS: WritingPost[] = [
 
     '然而，时光从不会等待谁。周末就这样在一片温良而模糊的阳光里过去了。周一醒来，又忍不住问自己：What would you do today? What will you do to contribute to this world?',
 
-    '向之所欣，俯仰之间，已为陈迹。'
+    '向之所欣，俯仰之间，已为陈迹。',
 
-    '(图片来源：和谐号的手机)'
+    '(图片来源：和谐号的手机) '
   ]
 },
   
@@ -96,7 +96,7 @@ export const WRITINGS: WritingPost[] = [
 
     'Do something as though it could change the world.',
 
-    'Summer is over. There will be countless summers still to come.'
+    'Summer is over. There will be countless summers still to come.',
 
     '(Figure credit: Xuehan Huang)'
   ],
@@ -122,9 +122,9 @@ export const WRITINGS: WritingPost[] = [
 
     '做一件事，像它可以改变世界一样去做。',
 
-    '夏天结束了。接下来，还会有无数个夏天。'
+    '夏天结束了。接下来，还会有无数个夏天。',
 
-    '(图片来源：和谐号的手机)'
+    '(图片来源：和谐号的手机) '
   ]
 },
 
@@ -181,7 +181,7 @@ export const WRITINGS: WritingPost[] = [
     'Do not synchronize every animation frame; synchronize intent or state instead.',
     'Summary',
     'Hubs avatar animation is a hybrid system combining glTF looping animations, IK-based body reconstruction, networked hand states, and audio-driven speaking feedback.',
-    'The best design for richer avatars is to synchronize semantic animation states and let each client handle local playback and transitions.'
+    'The best design for richer avatars is to synchronize semantic animation states and let each client handle local playback and transitions.',
     '(Figure credit: Google)'
   ],
 
@@ -226,8 +226,8 @@ export const WRITINGS: WritingPost[] = [
     '不要同步每一帧动画，只同步状态或意图。',
     '总结',
     'Hubs avatar 动画是一个混合系统：glTF 动画循环 + IK 重建 + 手势状态同步 + 音频驱动说话反馈。',
-    '更好的做法是同步语义状态，由各客户端本地执行动画播放与过渡。'
-    '(图片来源：谷歌浏览器)'
+    '更好的做法是同步语义状态，由各客户端本地执行动画播放与过渡。',
+    '(图片来源：谷歌浏览器) '
   ]
 }
 
