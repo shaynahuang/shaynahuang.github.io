@@ -76,15 +76,16 @@ export default function WritingDetail({ post }: WritingDetailProps) {
           {post.date} · {post.readTime}
         </div>
 
-        <div className="relative mb-8 aspect-[16/10] overflow-hidden rounded-2xl bg-white shadow-soft">
-          <Image
-            src={post.image}
-            alt={post.title}
-            fill
-            sizes="(max-width: 768px) 100vw, 768px"
-            className="object-cover"
-          />
-        </div>
+        <div className="mb-8 overflow-hidden rounded-2xl bg-white shadow-soft">
+  <Image
+    src={post.image}
+    alt={post.title}
+    width={1200}
+    height={800}
+    sizes="(max-width: 768px) 100vw, 768px"
+    className="block h-auto w-full"
+  />
+</div>
 
         <div className={`space-y-5 text-lg leading-relaxed text-gray-900 ${language === 'zh' ? 'font-zh' : ''}`}>
           {paragraphs.map((paragraph, index) => {
