@@ -134,7 +134,7 @@ export default function Writing({ posts }: WritingProps) {
                 </div>
                 */}
               
-                <div className="text-[12px] md:text-sm text-black font-normal break-words display-script">
+                <div className="text-[12px] md:text-sm text-black font-normal break-words">
                 {post.title}
                 </div>
 
