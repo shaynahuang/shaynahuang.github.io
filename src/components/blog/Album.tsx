@@ -36,29 +36,20 @@ export default function Album() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {byYearDesc[year].map((m, idx) => (
               <a
-                key={year + '-' + idx}
-                href={`/blog/memories/${m.slug}`}
-                className="group aspect-square rounded-2xl bg-white shadow-soft overflow-hidden relative transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-lg"
-              >
-                {/* 背景封面图 */}
-                <div className="absolute inset-0">
-                  <Image
-                    src={m.image || '/images/photo.jpg'}
-                    alt={m.title}
-                    fill
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-tr from-accent/10 to-transparent" />
-                {/* 静态底部白色蒙版（约1/3高度），hover时做轻微上移与透明度变化 */}
-                <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-white/90 translate-y-0 group-hover:translate-y-[-2px] transition-transform duration-300" />
-                <div className="absolute bottom-0 left-0 right-0 h-1/3 flex items-center px-3 md:px-4">
-                  <div className="text-[12px] md:text-sm text-black font-normal break-words">
-                    {m.title}
-                  </div>
-                </div>
-              </a>
+  key={year + '-' + idx}
+  href={`/blog/memories/${m.slug}`}
+  className="group aspect-square rounded-full bg-white shadow-soft overflow-hidden relative transition-transform duration-300 hover:-translate-y-0.5 hover:shadow-lg"
+>
+  <div className="absolute inset-0">
+    <Image
+      src={m.image || '/images/photo.jpg'}
+      alt={m.title}
+      fill
+      sizes="(max-width: 768px) 50vw, 25vw"
+      className="object-cover"
+    />
+  </div>
+</a>
             ))}
           </div>
         </div>
