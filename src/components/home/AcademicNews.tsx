@@ -2,6 +2,13 @@ import React from "react";
 
 const NEWS = [
   {
+    date: "11/2026",
+    content: (
+      <>🎉 My first-author paper (EchoYourMove) has been accepted to IJHCI! This marks my first publication in the XR field and my first in an international journal. Many thanks to my fantastic co-authors!</>
+    ),
+    link: null,
+  },
+  {
     date: "06/2026",
     content: (
       <>🔍💻 Starting my journey as a Research Assistant at Department of Computing, PolyU!</>
