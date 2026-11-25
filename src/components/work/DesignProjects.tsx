@@ -16,7 +16,9 @@ interface DesignProjectsProps {
 export default function DesignProjects({ projects }: DesignProjectsProps) {
   return (
     <div className="mt-16">
-      <h2 className="text-3xl font-bold text-accent mb-8">Design Projects</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold text-accent mb-8 display-script">
+  Design Projects
+</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
         {projects.slice(0, 6).map((project, index) => (
           <a
